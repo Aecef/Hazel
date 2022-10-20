@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../Hazel/src/Hazel/Core.h"
-
+//#include "../Hazel/src/Hazel/Core.h"
+#include "Hazel/Core.h"
 #include <string>
 #include <functional>
 
@@ -28,7 +28,7 @@ namespace Hazel {
 		EventCategoryInput       = BIT(1),
 		EventCategoryKeyboard    = BIT(2),
 		EventCategoryMouse       = BIT(3),
-		EventCategoryMouseButton = BIT(4),
+		EventCategoryMouseButton = BIT(4)
 
 	};
 
@@ -53,7 +53,7 @@ namespace Hazel {
 		}
 
 	protected:
-		bool m_Handeled = false;
+		bool m_Handled = false;
 	};
 
 	class EventDispatcher
@@ -69,7 +69,7 @@ namespace Hazel {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.m_Handeled = func(*(T*)&m_Event);
+				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;
