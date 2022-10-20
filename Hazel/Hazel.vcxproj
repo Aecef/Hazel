@@ -143,6 +143,10 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ApplicationEvent.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="KeyEvent.h" />
+    <ClInclude Include="MouseEvent.h" />
     <ClInclude Include="src\Hazel.h" />
     <ClInclude Include="src\Hazel\Application.h" />
     <ClInclude Include="src\Hazel\Core.h" />
