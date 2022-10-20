@@ -67,5 +67,9 @@ namespace Hazel {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
+	// TODO: WindowFocus 
+	// TODO: WindowLostFocus 
+	// TODO: WindowMoved 
+
 
 }
