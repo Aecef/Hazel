@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Event.h"
+#include "../Hazel/Event.h"
 
 #include <sstream>
 
