@@ -40,9 +40,10 @@ project "Hazel"
 		"%{IncludeDir.GLFW}"
 	}
 
-	links{
+	links
+	{
 		"GLFW",
-		"open132.lib"
+		"opengl32.lib"
 	}
 
 
