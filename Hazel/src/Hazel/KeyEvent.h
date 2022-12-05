@@ -4,7 +4,7 @@
 #include "Event.h"
 
 namespace Hazel {
-	class HAZEL_API KeyEvent : Event
+	class HAZEL_API KeyEvent : public Event
 	{
 
 	public:
@@ -58,7 +58,7 @@ namespace Hazel {
 			return ss.str();
 		}
 
-		EVENT_CLASS_CATEGORY(KeyReleased)
+		EVENT_CLASS_TYPE(KeyReleased)
 
 	private:
 		int m_RepeatCount;
